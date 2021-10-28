@@ -1,4 +1,4 @@
-import { Badge } from "@material-ui/core";
+import { Badge, IconButton } from "@material-ui/core";
 import { Search, ShoppingCart } from "@material-ui/icons";
 import styled from "styled-components";
 
@@ -73,9 +73,15 @@ const Navbar = () => {
           <MenuItem>Sign In</MenuItem>
           <MenuItem>Sign Up</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCart />
-            </Badge>
+            <IconButton
+              color="primary"
+              aria-label="upload picture"
+              component="span"
+            >
+              <Badge badgeContent={4} color="primary">
+                <ShoppingCart />
+              </Badge>
+            </IconButton>
           </MenuItem>
         </Right>
       </Wrapper>
