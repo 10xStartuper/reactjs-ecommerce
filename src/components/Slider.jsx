@@ -14,7 +14,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #fff7f7;
+  background-color: #ebebeb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: ${(props) => props.bg};
+  background-color: #${(props) => props.bg};
 `;
 const ImgContainer = styled.div`
   height: 80%;
@@ -97,6 +97,7 @@ const Slider = () => {
         {sliderItems.map((el) => {
           return (
             <Slide bg={el.bg} key={el.id}>
+              {console.log(el.bg)}
               <ImgContainer>
                 <Image src={el.img} />
               </ImgContainer>
