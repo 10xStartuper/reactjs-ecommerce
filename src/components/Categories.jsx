@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  padding: 12px 64px;
+  /* padding: 12px 64px; */
 `;
 
 const Categories = () => {
