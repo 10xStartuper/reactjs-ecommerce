@@ -3,13 +3,14 @@ import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import React, { useState } from "react";
 import styled from "styled-components";
 import sliderItems from "../data";
-
+import { mobile } from "../responsive";
 const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
   overflow: hidden;
+  ${mobile({ display: "none" })}
 `;
 const Arrow = styled.div`
   width: 50px;

@@ -1,6 +1,7 @@
 import { Badge, IconButton } from "@material-ui/core";
 import { Search, ShoppingCart } from "@material-ui/icons";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
@@ -10,6 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  ${mobile({ padding: "10px" })}
 `;
 
 //Left side of a Navbar
@@ -17,6 +19,7 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  ${mobile({ display: "none" })}
 `;
 const Language = styled.span`
   font-size: 14px;
@@ -38,8 +41,11 @@ const Input = styled.input`
 const Center = styled.div`
   flex: 1;
   text-align: center;
+  ${mobile({ flex: "2" })}
 `;
-const Logo = styled.h2``;
+const Logo = styled.h2`
+  ${mobile({ fontSize: "20px" })}
+`;
 
 //Right
 const Right = styled.div`
@@ -47,9 +53,11 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  ${mobile({ flex: 6 })}
 `;
 const MenuItem = styled.div`
   font-size: 14px;
+  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
   cursor: pointer;
   margin-left: 25px;
   text-transform: uppercase;

@@ -4,11 +4,16 @@ import { categories } from "../data";
 
 import CategoryItem from "./Items/CategoryItem";
 
+import { mobile } from "../responsive";
+
 const Container = styled.div`
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  /* padding: 12px 64px; */
+  ${mobile({
+    flexDirection: "column",
+    padding: "0px",
+  })}/* padding: 12px 64px; */
 `;
 
 const Categories = () => {

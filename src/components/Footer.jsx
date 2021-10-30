@@ -8,12 +8,14 @@ import {
   Twitter,
 } from "@material-ui/icons";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
   background-color: #222;
   color: #f4f4f4;
   padding: 12px 64px;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const Left = styled.div`
@@ -34,8 +36,8 @@ const SocialContainer = styled.div`
 `;
 
 const SocialIcon = styled.div`
-  width: 40px;
-  height: 40px;
+  max-width: 96px;
+  max-height: 96px;
   border-radius: 50%;
   color: white;
   background-color: #${(props) => props.color};
@@ -43,6 +45,7 @@ const SocialIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  ${mobile({ margin: "2px" })}
 `;
 
 const Center = styled.div`
