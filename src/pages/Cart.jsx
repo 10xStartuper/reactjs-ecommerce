@@ -1,3 +1,4 @@
+import { IconButton } from "@material-ui/core";
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
@@ -179,9 +180,13 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <Add />
+                  <IconButton>
+                    <Add />
+                  </IconButton>
                   <ProductAmount>2</ProductAmount>
-                  <Remove />
+                  <IconButton>
+                    <Remove />
+                  </IconButton>
                 </ProductAmountContainer>
                 <ProductPrice>$ 30</ProductPrice>
               </PriceDetail>
@@ -205,9 +210,13 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <Add />
+                  <IconButton>
+                    <Add />
+                  </IconButton>
                   <ProductAmount>1</ProductAmount>
-                  <Remove />
+                  <IconButton>
+                    <Remove />
+                  </IconButton>
                 </ProductAmountContainer>
                 <ProductPrice>$ 20</ProductPrice>
               </PriceDetail>
