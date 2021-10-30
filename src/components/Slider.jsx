@@ -87,8 +87,6 @@ const Slider = () => {
     }
   };
 
-  setTimeout(() => handleClick("right"), 5000);
-
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
