@@ -7,6 +7,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 12px 64px;
 `;
 
 const Products = () => {

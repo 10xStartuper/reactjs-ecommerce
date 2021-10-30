@@ -41,6 +41,8 @@ const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  /* padding: 12px 64px; */
+
   background-color: #${(props) => props.bg};
 `;
 const ImgContainer = styled.div`
